@@ -1,7 +1,9 @@
+import { Post } from './Post'
+
 export const App = () => {
   return (
     <>
-      <h1>teste</h1>
+      <Post author="Diego Horvatti" day="11/03/2023" />
     </>
   )
 }

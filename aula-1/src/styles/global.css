@@ -20,7 +20,7 @@
 }
 
 body {
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 8px;
   padding: 2rem 3rem;
   margin-top: -10rem;
@@ -28,12 +28,52 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 6.25rem;
   --webit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+}
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+  background-color: purple;
+  color: var(--white);
+  padding: 0 2rem;
+  height: 3rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: filter 0.2s;
+}
+
+button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 5px #3f51b5;
 }
 
 body,
 input,
-textarea,
-button {
+textarea {
   font: 400 1rem 'Roboto', sans-serif;
   color: var(--gray-700);
+}
+
+button {
+  font: 400 1rem 'Roboto', sans-serif;
+  color: var(--white);
 }
